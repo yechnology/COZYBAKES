@@ -1,48 +1,63 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
+document.addEventListener("DOMContentLoaded", () => {
+    // Mobile Navigation Toggle
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
 
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+            const active = mainNav.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", active);
+        });
 
-document.querySelectorAll(".nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
-});
+        mainNav.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", () => mainNav.classList.remove("active"));
+        });
+    }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+    // Set Current Copyright Year
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 
-const orderForm = document.getElementById("orderForm");
-const formMessage = document.getElementById("formMessage");
+    // WhatsApp Order Handler
+    const orderForm = document.getElementById("orderForm");
+    const formMessage = document.getElementById("formMessage");
 
-orderForm.addEventListener("submit", function (event) {
-  event.preventDefault();
+    if (orderForm) {
+        orderForm.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const product = document.getElementById("product").value;
-  const message = document.getElementById("message").value.trim();
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const product = document.getElementById("product").value;
+            const dietary = document.getElementById("dietary").value;
+            const message = document.getElementById("message").value.trim();
 
-  if (!name || !phone || !product) {
-    formMessage.textContent = "Please fill in your name, phone number and order type.";
-    return;
-  }
+            if (!name || !phone || !product) {
+                formMessage.style.color = "var(--error)";
+                formMessage.textContent = "Please fill in your name, phone number, and selected product.";
+                return;
+            }
 
-  const text =
-    `Hello Cozy Bakes by Wardah!%0A%0A` +
-    `Name: ${encodeURIComponent(name)}%0A` +
-    `Phone: ${encodeURIComponent(phone)}%0A` +
-    `Order: ${encodeURIComponent(product)}%0A` +
-    `Details: ${encodeURIComponent(message || "No additional details.")}`;
+            const whatsappText =
+                `*NEW ORDER REQUEST - Cozy Bakes*%0A%0A` +
+                `👤 *Name:* ${encodeURIComponent(name)}%0A` +
+                `📞 *Phone:* ${encodeURIComponent(phone)}%0A` +
+                `🧁 *Item:* ${encodeURIComponent(product)}%0A` +
+                `🌾 *Preference:* ${encodeURIComponent(dietary)}%0A` +
+                `📝 *Details:* ${encodeURIComponent(message || "None provided")}`;
 
-  // Replace 230XXXXXXXX with the bakery's real WhatsApp number.
-  const whatsappNumber = "230553912224";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
+            const phoneNum = "230553912224";
+            const targetUrl = `https://wa.me/${phoneNum}?text=${whatsappText}`;
 
-  formMessage.textContent = "Your order request is ready. Opening WhatsApp...";
+            formMessage.style.color = "var(--pink-soft)";
+            formMessage.textContent = "Opening WhatsApp to send your request...";
 
-  setTimeout(() => {
-    window.open(whatsappUrl, "_blank");
-  }, 500);
+            setTimeout(() => {
+                window.open(targetUrl, "_blank", "noopener,noreferrer");
+                formMessage.textContent = "";
+            }, 600);
+        });
+    }
 });
