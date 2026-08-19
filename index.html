@@ -1,183 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cozy Bakes by Wardah | Mauritius</title>
-  <meta name="description" content="Cozy Bakes by Wardah — affordable, fresh bakery treats in Mauritius with eco-friendly packaging and gluten-free options on request.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Bakes by Wardah | Artisanal Bakery Mauritius</title>
+    <meta name="description" content="Order handcrafted cupcakes, gourmet gold-dusted donuts, thick cookies, and custom vintage cakes in Mauritius. Gluten-free options available.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <a href="#home" class="logo-wrap">
-    <img src="logo.jpeg" alt="Cozy Bakes by Wardah logo">
-  </a>
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo-wrap" aria-label="Cozy Bakes Home">
+                <img src="logo.jpeg" alt="Cozy Bakes by Wardah Logo" width="60" height="60">
+            </a>
 
-  <button class="menu-toggle" aria-label="Open menu">☰</button>
+            <div class="header-right">
+                <div class="social-header-links">
+                    <a href="https://www.instagram.com/cozy__bakes_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@cozy_bakes_" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02.01.04.01.06.02v4.03c-.26-.06-.52-.1-.79-.11-1.01-.06-2.03.32-2.73 1.05-.72.73-.99 1.79-.82 2.79.16.94.8 1.75 1.68 2.13 1.06.48 2.33.34 3.25-.33.68-.48 1.12-1.22 1.23-2.04.07-1.07.03-2.15.04-3.22V.02z"/></svg>
+                    </a>
+                </div>
 
-  <nav class="nav" id="nav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#specialties">Specialties</a>
-    <a href="#values">Our Values</a>
-    <a href="#order" class="nav-order">Order Now</a>
-  </nav>
-</header>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger"></span>
+      </button>
+            </div>
 
-<main>
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p class="eyebrow">Freshly baked in Mauritius</p>
-      <h1>Little treats.<br><span>Big comfort.</span></h1>
-      <p class="hero-text">
-        Welcome to Cozy Bakes by Wardah — delicious and affordable homemade
-        treats made with care. Gluten-free flour is available upon request.
-      </p>
-
-      <div class="buttons">
-        <a href="#order" class="btn btn-primary">Order Now</a>
-        <a href="#specialties" class="btn btn-outline">Explore Bakes</a>
-      </div>
-
-      <div class="hero-points">
-        <span>♡ Affordable</span>
-        <span>✿ Eco-Friendly</span>
-        <span>✦ Custom Orders</span>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <div class="image-card">
-        <img src="logo.jpeg" alt="Cozy Bakes by Wardah">
-      </div>
-      <div class="floating-note">BAKED WITH<br>LOVE ♡</div>
-    </div>
-  </section>
-
-  <section class="intro" id="about">
-    <p class="eyebrow">Welcome to Cozy Bakes</p>
-    <h2>A little sweetness for every occasion.</h2>
-    <p>
-      From everyday cravings to special celebrations, Cozy Bakes by Wardah
-      brings warm, comforting bakery treats to customers across Mauritius.
-      We believe good food should be delicious, accessible and thoughtfully made.
-    </p>
-  </section>
-
-  <section class="specialties" id="specialties">
-    <div class="section-title">
-      <p class="eyebrow">Our specialties</p>
-      <h2>Made for your sweet moments.</h2>
-    </div>
-
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">🧁</div>
-        <h3>Cupcakes</h3>
-        <p>Soft, fluffy and beautifully finished for birthdays, gifts and everyday treats.</p>
-        <span>Freshly made</span>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🍪</div>
-        <h3>Cookies</h3>
-        <p>Golden, comforting bites that are perfect with tea, coffee or simply on their own.</p>
-        <span>Made with care</span>
-      </article>
-
-      <article class="card">
-        <div class="card-icon">🎂</div>
-        <h3>Custom Bakes</h3>
-        <p>Tell us your idea and we can create a special bake for your celebration or event.</p>
-        <span>Made your way</span>
-      </article>
-    </div>
-  </section>
-
-  <section class="values" id="values">
-    <div class="values-image">
-      <div class="quote-card">
-        <span>“</span>
-        <p>Sweetness should feel good — for you and for the world around you.</p>
-      </div>
-    </div>
-
-    <div class="values-content">
-      <p class="eyebrow">What makes us different</p>
-      <h2>Good for you.<br>Kind to the planet.</h2>
-
-      <div class="value">
-        <div class="value-icon">🌿</div>
-        <div>
-          <h3>Eco-Friendly Materials</h3>
-          <p>We use eco-friendly packaging and materials whenever possible to reduce unnecessary waste.</p>
+            <nav class="nav" id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#social">Community</a>
+                <a href="#faq">FAQ</a>
+                <a href="tel:+230553912224" class="btn btn-call btn-sm">📞 Call Us</a>
+                <a href="#order" class="btn btn-primary btn-sm">Place Order</a>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="value">
-        <div class="value-icon">🌾</div>
-        <div>
-          <h3>Gluten-Free On Request</h3>
-          <p>Gluten-free flour can be requested when ordering, depending on the product you choose.</p>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">Freshly baked in Mauritius</span>
+                <h1>Little treats.<br><span>Big comfort.</span></h1>
+                <p class="hero-text">
+                    Handcrafted cupcakes, gourmet donuts, thick cookies, and vintage custom cakes made with care in Mauritius. Gluten-free choices available on request.
+                </p>
+
+                <div class="buttons">
+                    <a href="#order" class="btn btn-primary">Order via WhatsApp</a>
+                    <a href="tel:+230553912224" class="btn btn-call">📞 Call 5539 1222</a>
+                    <a href="#gallery" class="btn btn-outline">View Gallery</a>
+                </div>
+
+                <div class="hero-points">
+                    <span class="badge">🌱 Sustainable Packaging</span>
+                    <span class="badge">🌾 Gluten-Free Friendly</span>
+                    <span class="badge">🇲🇺 Island Delivery Options</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <figure class="image-card">
+                    <img src="IMG_9664.jpeg" alt="Vintage piped heart cake by Cozy Bakes" width="500" height="500">
+                </figure>
+                <div class="floating-note">BAKED FRESH<br>DAILY ♡</div>
+            </div>
+        </section>
+
+        <section class="intro" id="about">
+            <span class="eyebrow">Our Story</span>
+            <h2>Baking Little Moments of Sweet Joy</h2>
+            <p>
+                Cozy Bakes by Wardah is a little home bakery in Mauritius, created with love, care, and purpose. We craft comforting treats using thoughtfully chosen ingredients, mindful portions, and more sustainable practices wherever possible. From eco-conscious packaging
+                to reducing waste, we believe small choices can make a difference. Most importantly, we care about your well-being and happiness, creating delicious bakes that are made with quality, care, and a little everyday magic.
+            </p>
+            <p>
+                We believe that every celebration—whether a quiet afternoon tea or a grand milestone event—deserves a centerpiece made with genuine love and thoughtful care.
+            </p>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="section-title">
+                <span class="eyebrow">Our Menu</span>
+                <h2>Artisanal Selections</h2>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-header">
+                        <span class="product-emoji">🍩</span>
+                        <span class="price-tag">Quote on Request</span>
+                    </div>
+                    <h3>Glazed & Gold Donuts</h3>
+                    <p>Soft artisan donuts with matcha glazing, white chocolate drizzle, and gold leaf finishing.</p>
+                    <div class="card-footer">
+                        <span class="tag">Signature Item</span>
+                        <a href="#order" class="card-link">Order Box &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-header">
+                        <span class="product-emoji">🍪</span>
+                        <span class="price-tag">Quote on Requests</span>
+                    </div>
+                    <h3>Thick Stuffed Cookies</h3>
+                    <p>Red velvet white chip, dark chocolate chunk, and cookie-monster Oreo stuffed cookies.</p>
+                    <div class="card-footer">
+                        <span class="tag">Bestseller</span>
+                        <a href="#order" class="card-link">Order Box &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-header">
+                        <span class="product-emoji">🎂</span>
+                        <span class="price-tag">Quote on Request</span>
+                    </div>
+                    <h3>Custom Vintage Cakes</h3>
+                    <p>Intricate piped buttercream cakes, fresh floral toppers, drip designs, and personalized lettering.</p>
+                    <div class="card-footer">
+                        <span class="tag">Custom Design</span>
+                        <a href="#order" class="card-link">Inquire &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="section-title">
+                <span class="eyebrow">Fresh From The Oven</span>
+                <h2>Our Bakes Showcase</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9656.jpeg" alt="Matcha and white chocolate glazed donuts with gold leaf details">
+                    </a>
+                    <figcaption class="gallery-caption">Gold-Dusted Donuts</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9657.jpeg" alt="Assorted frosted donuts on cooling racks">
+                    </a>
+                    <figcaption class="gallery-caption">Assorted Donut Trays</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9658.jpeg" alt="Freshly baked red velvet, dark chocolate, and Oreo cookies">
+                    </a>
+                    <figcaption class="gallery-caption">Handcrafted Thick Cookies</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9660.jpeg" alt="Custom coral pink cake with white petal frosting">
+                    </a>
+                    <figcaption class="gallery-caption">Petal Lettering Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9661.jpeg" alt="Chocolate drip cake topped with Oreos and gold sprinkles">
+                    </a>
+                    <figcaption class="gallery-caption">Oreo Chocolate Drip Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9662.jpeg" alt="Custom floral birthday cake with fresh pink and orange flowers">
+                    </a>
+                    <figcaption class="gallery-caption">Fresh Flower Custom Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9663.jpeg" alt="Event dessert table setup with cupcakes and treat displays">
+                    </a>
+                    <figcaption class="gallery-caption">Event Dessert Platters</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <a href="#order" class="gallery-link">
+                        <img src="IMG_9665.jpeg" alt="Handcrafted pink and berry cake truffles drizzle with white chocolate">
+                    </a>
+                    <figcaption class="gallery-caption">Drizzled Truffle Balls</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="social-banner" id="social">
+            <div class="social-box">
+                <span class="eyebrow">Follow Our Journey</span>
+                <h2>Behind the scenes & fresh bakes.</h2>
+                <p>Watch daily baking clips, design reveals, and customer reviews on our social channels.</p>
+
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/cozy__bakes_/" target="_blank" rel="noopener noreferrer" class="social-btn insta">
+          Instagram: @cozy__bakes_
+        </a>
+                    <a href="https://www.tiktok.com/@cozy_bakes_" target="_blank" rel="noopener noreferrer" class="social-btn tiktok">
+          TikTok: @cozy_bakes_
+        </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="section-title">
+                <span class="eyebrow">Help & Info</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary>How far in advance should I order?</summary>
+                    <p>For standard cupcakes, cookies, and donuts, please place orders 24–48 hours in advance. For custom celebration cakes, we recommend booking 5–7 days prior.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Are gluten-free options available?</summary>
+                    <p>Yes! We offer gluten-free flour options upon request when placing your order.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Where do you deliver in Mauritius?</summary>
+                    <p>We offer pickup options as well as direct courier delivery across major districts in Mauritius. Delivery fees vary by region.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="order" id="order">
+            <div class="order-box">
+                <span class="eyebrow">Place An Order</span>
+                <h2>Ready for something sweet?</h2>
+                <p>Fill in your details below to generate an instant WhatsApp order request, or call us directly at <a href="tel:+230553912224" class="phone-link">+230 5539 12224</a>.</p>
+
+                <form id="orderForm" novalidate>
+                    <div class="form-row">
+                        <input type="text" id="name" placeholder="Full Name" required autocomplete="name">
+                        <input type="tel" id="phone" placeholder="Phone Number (e.g., 51234567)" required autocomplete="tel">
+                    </div>
+
+                    <div class="form-row">
+                        <select id="product" required>
+            <option value="" disabled selected>Select Main Item</option>
+            <option value="Gourmet Donuts">Gourmet Donuts</option>
+            <option value="Thick Stuffed Cookies">Thick Stuffed Cookies</option>
+            <option value="Custom Vintage Cake">Custom Vintage Cake</option>
+            <option value="Cupcakes & Truffles">Cupcakes & Truffles</option>
+            <option value="Event Dessert Table / Other">Event Dessert Table / Other</option>
+          </select>
+                        <select id="dietary">
+            <option value="Standard">Standard Recipe</option>
+            <option value="Gluten-Free Request">Gluten-Free Flour Requested</option>
+          </select>
+                    </div>
+
+                    <textarea id="message" placeholder="Provide event date, preferred flavors, quantity, or specific notes..." rows="4"></textarea>
+
+                    <button type="submit" class="btn btn-light">Send Request via WhatsApp</button>
+                </form>
+
+                <div id="formMessage" class="form-message" role="status"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="mobile-action-bar">
+        <a href="tel:+230553912224" class="mobile-btn call-btn">📞 Call</a>
+        <a href="#order" class="mobile-btn whatsapp-btn">💬 Order</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <strong>COZY BAKES BY WARDAH</strong>
+                <p>Artisanal Homemade Bakery · Mauritius</p>
+                <p class="footer-phone">Direct Line: <a href="tel:+230553912224">+230 5539 12224</a></p>
+            </div>
+
+            <div class="footer-links">
+                <a href="https://www.instagram.com/cozy__bakes_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@cozy_bakes_" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#order">Order</a>
+            </div>
+
+            <p>© <span id="year"></span> Cozy Bakes. All rights reserved.</p>
         </div>
-      </div>
+    </footer>
 
-      <div class="value">
-        <div class="value-icon">♡</div>
-        <div>
-          <h3>Affordable & Homemade</h3>
-          <p>We keep our treats accessible while giving every order the care of a homemade bake.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="order" id="order">
-    <div class="order-box">
-      <p class="eyebrow">Let's bake something lovely</p>
-      <h2>Ready for your next sweet treat?</h2>
-      <p>
-        Tell us what you'd like, your preferred flavour and any special
-        requirements such as gluten-free flour.
-      </p>
-
-      <form id="orderForm">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="tel" id="phone" placeholder="Phone number" required>
-        <select id="product" required>
-          <option value="">What would you like?</option>
-          <option>Cupcakes</option>
-          <option>Cookies</option>
-          <option>Custom Bakes</option>
-          <option>Other</option>
-        </select>
-        <textarea id="message" placeholder="Tell us about your order..." rows="4"></textarea>
-        <button type="submit" class="btn btn-light">Send Order Request</button>
-      </form>
-
-      <p class="form-message" id="formMessage"></p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div>
-      <strong>COZY BAKES</strong>
-      <p>BY WARDAH · MAURITIUS</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#specialties">Menu</a>
-      <a href="#order">Order</a>
-    </div>
-
-    <p>© <span id="year"></span> Cozy Bakes by Wardah</p>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
+
 </html>
