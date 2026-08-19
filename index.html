@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Bakes by Wardah | Mauritius</title>
+  <meta name="description" content="Cozy Bakes by Wardah — affordable, fresh bakery treats in Mauritius with eco-friendly packaging and gluten-free options on request.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#home" class="logo-wrap">
+    <img src="logo.jpeg" alt="Cozy Bakes by Wardah logo">
+  </a>
+
+  <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#specialties">Specialties</a>
+    <a href="#values">Our Values</a>
+    <a href="#order" class="nav-order">Order Now</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">Freshly baked in Mauritius</p>
+      <h1>Little treats.<br><span>Big comfort.</span></h1>
+      <p class="hero-text">
+        Welcome to Cozy Bakes by Wardah — delicious and affordable homemade
+        treats made with care. Gluten-free flour is available upon request.
+      </p>
+
+      <div class="buttons">
+        <a href="#order" class="btn btn-primary">Order Now</a>
+        <a href="#specialties" class="btn btn-outline">Explore Bakes</a>
+      </div>
+
+      <div class="hero-points">
+        <span>♡ Affordable</span>
+        <span>✿ Eco-Friendly</span>
+        <span>✦ Custom Orders</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="image-card">
+        <img src="logo.jpeg" alt="Cozy Bakes by Wardah">
+      </div>
+      <div class="floating-note">BAKED WITH<br>LOVE ♡</div>
+    </div>
+  </section>
+
+  <section class="intro" id="about">
+    <p class="eyebrow">Welcome to Cozy Bakes</p>
+    <h2>A little sweetness for every occasion.</h2>
+    <p>
+      From everyday cravings to special celebrations, Cozy Bakes by Wardah
+      brings warm, comforting bakery treats to customers across Mauritius.
+      We believe good food should be delicious, accessible and thoughtfully made.
+    </p>
+  </section>
+
+  <section class="specialties" id="specialties">
+    <div class="section-title">
+      <p class="eyebrow">Our specialties</p>
+      <h2>Made for your sweet moments.</h2>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">🧁</div>
+        <h3>Cupcakes</h3>
+        <p>Soft, fluffy and beautifully finished for birthdays, gifts and everyday treats.</p>
+        <span>Freshly made</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🍪</div>
+        <h3>Cookies</h3>
+        <p>Golden, comforting bites that are perfect with tea, coffee or simply on their own.</p>
+        <span>Made with care</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🎂</div>
+        <h3>Custom Bakes</h3>
+        <p>Tell us your idea and we can create a special bake for your celebration or event.</p>
+        <span>Made your way</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="values" id="values">
+    <div class="values-image">
+      <div class="quote-card">
+        <span>“</span>
+        <p>Sweetness should feel good — for you and for the world around you.</p>
+      </div>
+    </div>
+
+    <div class="values-content">
+      <p class="eyebrow">What makes us different</p>
+      <h2>Good for you.<br>Kind to the planet.</h2>
+
+      <div class="value">
+        <div class="value-icon">🌿</div>
+        <div>
+          <h3>Eco-Friendly Materials</h3>
+          <p>We use eco-friendly packaging and materials whenever possible to reduce unnecessary waste.</p>
+        </div>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">🌾</div>
+        <div>
+          <h3>Gluten-Free On Request</h3>
+          <p>Gluten-free flour can be requested when ordering, depending on the product you choose.</p>
+        </div>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">♡</div>
+        <div>
+          <h3>Affordable & Homemade</h3>
+          <p>We keep our treats accessible while giving every order the care of a homemade bake.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="order-box">
+      <p class="eyebrow">Let's bake something lovely</p>
+      <h2>Ready for your next sweet treat?</h2>
+      <p>
+        Tell us what you'd like, your preferred flavour and any special
+        requirements such as gluten-free flour.
+      </p>
+
+      <form id="orderForm">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="tel" id="phone" placeholder="Phone number" required>
+        <select id="product" required>
+          <option value="">What would you like?</option>
+          <option>Cupcakes</option>
+          <option>Cookies</option>
+          <option>Custom Bakes</option>
+          <option>Other</option>
+        </select>
+        <textarea id="message" placeholder="Tell us about your order..." rows="4"></textarea>
+        <button type="submit" class="btn btn-light">Send Order Request</button>
+      </form>
+
+      <p class="form-message" id="formMessage"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong>COZY BAKES</strong>
+      <p>BY WARDAH · MAURITIUS</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#specialties">Menu</a>
+      <a href="#order">Order</a>
+    </div>
+
+    <p>© <span id="year"></span> Cozy Bakes by Wardah</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
